@@ -3,34 +3,212 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>JB ㅇㅇㅇ포트폴리오</title>
+  <title>김종백 | AI 사업기획 포트폴리오</title>
   <style>
-    body { font-family: sans-serif; max-width: 800px; margin: auto; padding: 2rem; }
-    h1 { border-bottom: 2px solid #333; }
-    section { margin-bottom: 2rem; }
+    /* 기본 스타일 */
+    body { 
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      line-height: 1.6;
+      max-width: 900px; 
+      margin: auto; 
+      padding: 2rem; 
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    h1, h2, h3 { color: #222; }
+    h1 { font-size: 2.5rem; border-bottom: 3px solid #333; padding-bottom: 0.5rem; }
+    h2 { font-size: 1.8rem; border-bottom: 1px solid #ddd; padding-bottom: 0.5rem; margin-top: 3rem; }
+    h3 { font-size: 1.3rem; }
+    a { color: #007BFF; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    ul { padding-left: 20px; }
+    li { margin-bottom: 0.5rem; }
+
+    /* 헤더 (소개) 섹션 */
+    .intro-header {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      margin-bottom: 3rem;
+    }
+    .intro-header img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #ddd;
+    }
+    .intro-text h1 {
+        margin-bottom: 0.5rem;
+    }
+     .intro-text p {
+        font-size: 1.1rem;
+        color: #555;
+    }
+
+    /* 프로젝트 카드 스타일 */
+    .project-card {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      transition: box-shadow 0.3s ease-in-out;
+    }
+    .project-card:hover {
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+    .project-card h4 {
+        color: #333;
+        border-left: 4px solid #007BFF;
+        padding-left: 0.8rem;
+        margin-top: 1.5rem;
+    }
+
+    /* 경력 섹션 */
+    .experience-item {
+        margin-bottom: 2rem;
+    }
+    .experience-item h3 {
+        margin-bottom: 0.2rem;
+    }
+     .experience-item .role {
+        font-style: italic;
+        color: #666;
+        margin-bottom: 1rem;
+    }
+
+    /* 푸터 */
+    footer {
+        text-align: center;
+        margin-top: 4rem;
+        padding-top: 2rem;
+        border-top: 1px solid #ddd;
+        color: #888;
+    }
   </style>
 </head>
 <body>
-  <h1>JB 소개</h1>
-  <section>
-    <h2>경력 및 스킬</h2>
-    <ul>
-      <li>데이터 분석 & 경영 기획</li>
-      <li>SQL / Python / DuckDB</li>
-      <li>커머스 기획 및 웹사이트 구축</li>
-    </ul>
-  </section>
-  <section>
-    <h2>프로젝트</h2>
-    <ul>
-      <li>홈쇼핑 방송편성 자동 크롤러 (Selenium + Python)</li>
-      <li>AI 기반 상품 분류 파이프라인 (SBERT, DuckDB)</li>
-    </ul>
-  </section>
-  <section>
-    <h2>연락처</h2>
-    <p>Email: your.email@example.com</p>
-    <p>GitHub: <a href="https://github.com/your-username">github.com/your-username</a></p>
-  </section>
+
+  <header class="intro-header">
+    <img src="photo.jpg" alt="김종백 프로필 사진">
+    <div class="intro-text">
+      <h1>김종백</h1>
+      <p>데이터와 AI로 비즈니스의 미래를 설계하는 경영기획 및 AI 전략 전문가</p>
+    </div>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        10년 이상의 커머스 사업기획 및 경영기획 경험과 데이터 사이언스 석사 전문성을 결합하여, 비즈니스 문제 해결을 위한 데이터 기반의 전략 수립 및 실행에 강점을 가지고 있습니다. 특히, 고객 데이터를 활용한 개인화 서비스 기획으로 매출 증대를 이끌고, AI 수요 예측 모델을 도입하여 운영 효율성을 극대화한 경험이 있습니다. 기술의 가능성과 비즈니스의 현실 사이의 간극을 줄여, 지속 가능한 AI 비즈니스 모델을 설계합니다.
+      </p>
+    </section>
+
+    <section id="projects">
+      <h2>Key Projects</h2>
+
+      <article class="project-card">
+        <h3>AI 개인화 방송 프로젝트</h3>
+        <h4>도전 과제</h4>
+        <p>일률적인 방송 송출 방식의 구매 전환율 정체 문제 해결 및 방송 효율성 극대화 필요.</p>
+        <h4>주요 역할 및 실행</h4>
+        <ul>
+          <li>AI 서비스 기획 및 프로젝트 총괄(PM) 수행.</li>
+          <li>고객 데이터를 7개 그룹으로 세분화(Segmentation), 그룹별 선호도 차이 증명.</li>
+          <li>빠른 시장 검증을 위한 MVP 모델(협업 필터링 기반) 설계 및 A/B 테스트 환경 구축.</li>
+          <li>개인화 방송 '다원 방송' 시스템의 요구사항 정의 및 개발 협업 리딩.</li>
+        </ul>
+        <h4>결과 및 기여</h4>
+        <p>신규 매출원 확보 및 연간 N% 추가 매출 창출. 송출 상품 포트폴리오 20% 확대.</p>
+      </article>
+
+      <article class="project-card">
+        <h3>AI 수요 예측 기반 콜센터 운영 최적화</h3>
+        <h4>도전 과제</h4>
+        <p>방송 상품별 주문량 변동성으로 인한 콜 폭주(기회손실)와 상담원 대기(비용 낭비)의 비효율 문제 발생.</p>
+        <h4>주요 역할 및 실행</h4>
+        <ul>
+          <li>AI 프로덕트 기획자(Product Planner)로서 문제 정량화 및 개선 목표 설정.</li>
+          <li>콜 인입량에 영향을 미치는 15개 핵심 변수(Feature) 정의.</li>
+          <li>'상담원 최적 배치 추천 대시보드' 기획 및 예측 시스템과 운영 스케줄링 연동 프로세스 설계.</li>
+        </ul>
+        <h4>결과 및 기여</h4>
+        <p>연간 주문 상담 비용 N% (약 Y억 원) 절감. 콜 응답률 N%p 개선으로 판매 기회 손실 방지.</p>
+      </article>
+      
+      <article class="project-card">
+        <h3>차세대 방송 시스템 및 판매 프로세스 혁신</h3>
+        <h4>도전 과제</h4>
+        <p>부서별 데이터 파편화 및 수동 업무로 인한 운영 비효율과 의사결정 지연 문제.</p>
+        <h4>주요 역할 및 실행</h4>
+        <ul>
+            <li>프로세스 혁신(PI) 담당자로서 As-Is 분석 및 To-Be 프로세스 재설계.</li>
+            <li>수익성 중심 편성을 위한 '예상 한계이익' 자동 계산 예측 모델 도입 기획.</li>
+        </ul>
+        <h4>결과 및 기여</h4>
+        <p>연간 N만 업무 시간 단축 및 인적 오류 70% 이상 감소. 데이터 기반의 수익성 중심 의사결정 체계 마련.</p>
+      </article>
+
+      <article class="project-card">
+        <h3>공영홈쇼핑 법인 설립 및 초기 시스템 구축</h3>
+        <h4>도전 과제</h4>
+        <p>공공기관으로서의 규제를 충족하는 투명하고 효율적인 사업 모델 및 운영 체계의 단기간 내 구축.</p>
+        <h4>주요 역할 및 실행</h4>
+        <ul>
+          <li>법인설립추진단 및 초기 편성전략 담당자로 참여.</li>
+          <li>법적 리스크 방지를 위한 '데이터 관리 체계' 초기 설계.</li>
+          <li>경험이 아닌 '데이터 기반의 편성 및 매출 분석 프로세스' 최초 정립.</li>
+        </ul>
+        <h4>결과 및 기여</h4>
+        <p>성공적인 사업 론칭 및 안정적 운영의 기틀 마련. 회사의 데이터 기반 의사결정 문화의 초석이 됨.</p>
+      </article>
+
+    </section>
+
+    <section id="experience">
+        <h2>Work Experience</h2>
+        <div class="experience-item">
+            <h3>SK스토아㈜</h3>
+            <p class="role">경영기획팀, 커머스기획팀, 편성기획팀 | 매니저 (2019.12 – 현재)</p>
+            <ul>
+                <li>연간 경영계획 및 중장기 사업 전략 수립, 손익 관리</li>
+                <li>전사 KPI 기준 수립 및 실적/성과 관리</li>
+                <li>데이터 기반 방송 편성 및 판매 전략 기획/운영</li>
+            </ul>
+        </div>
+        <div class="experience-item">
+            <h3>㈜공영홈쇼핑</h3>
+            <p class="role">편성전략팀, 법인설립팀 | 대리 (2015.03 – 2019.12)</p>
+            <ul>
+                <li>생방송 편성 전략 수립 및 채널 운영 총괄</li>
+                <li>법인 설립 및 초기 운영 시스템 구축 지원</li>
+                <li>데이터 기반 매출 분석 및 편성 프로세스 최초 도입</li>
+            </ul>
+        </div>
+        <div class="experience-item">
+            <h3>한국공항㈜</h3>
+            <p class="role">경영지원팀 | 사원 (2012.01 – 2013.07)</p>
+            <ul>
+                <li>금융감독원 공시(IR) 및 그룹사 관련 보고 업무</li>
+                <li>사업계획 수립 및 공항별 관리손익 분석</li>
+            </ul>
+        </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:smile4menow@naver.com">smile4menow@naver.com</a></p>
+      <p>GitHub: <a href="https://github.com/your-username" target="_blank">https://from237.github.io/kjb/</a></p>
+      <p>&copy; 2025 Jong-baek Kim. All Rights Reserved.</p>
+    </section>
+  </footer>
+
 </body>
 </html>
+```
